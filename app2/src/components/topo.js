@@ -1,14 +1,25 @@
 import React, {Component} from 'react';
-import {Image,View} from 'react-native';
+import {Image,View,StyleSheet} from 'react-native';
 
-class Topo extends Component{
+
+const logo = require('../../imgs/logodms.png');
+
+export default class Topo extends Component{
 	render(){
 		return (
 			<View>
-				<Image source= {require('../../imgs/logodms.png')} style ={{width:350,height:100,resizeMode:'cover'}} />
+				<Image source= {logo} style ={styles.imagemLogo} />
 			</View>
 		);
 	}
 }
 
-export default Topo;
+const styles = StyleSheet.create({
+	imagemLogo:{
+		marginTop:1,
+		width:350,
+		height:110,
+		resizeMode:'contain'
+	}
+
+});

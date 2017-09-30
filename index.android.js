@@ -10,7 +10,6 @@ export default class PFC extends Component {
     }
 
   calcular(){
-    console.log("Ives gay");
     const resultado = parseFloat(this.state.largura) * parseFloat(this.state.altura);
     const resultado2 = resultado.toString();
     this.setState({resultado : resultado2 });
@@ -106,7 +105,6 @@ export default class PFC extends Component {
             style = {styles.resultado}
             editable = {false}
             value = {this.state.resultado}
-
           />
           
           
