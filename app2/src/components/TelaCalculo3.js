@@ -22,41 +22,49 @@ export default class TelaCalculo3 extends Component {
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Número de pessoas'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Temperatura de congelamento do produto*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Tempo de permanência das pessoas*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Potência de iluminação'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Potência de motores (exceto evaporadores)'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Tempo de operação dos motores'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Fator de segurança'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Tempo de operação do compressor'
+		  			keyboardType = 'numeric'
 		  		/>		
 		  		
 		  		<Picker 
@@ -95,11 +103,13 @@ export default class TelaCalculo3 extends Component {
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Comprimento equivalente da linha de sucção'
+		  			keyboardType = 'numeric'
 		  		/>		
 
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Comprimento equivalente da linha de líquido'
+		  			keyboardType = 'numeric'
 		  		/>		
 		  		
 

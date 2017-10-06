@@ -38,7 +38,8 @@ export default class TelaCalculo extends Component {
 
   render(){
 	  return (
-	  	<ScrollView style = {styles.main}>
+	  	<ScrollView style = {styles.main} >
+		  	
 		  	<View style = {styles.sinalizador}>
 		  			<Text style = { styles.obrigatorio }>* Campo obrigatório </Text>
 		  	</View>
@@ -52,17 +53,11 @@ export default class TelaCalculo extends Component {
 
 		  		<TextInput
 		  			style = {styles.inputs}
-		  			placeholder='Comprimento*'
-		  			value = {this.state.comprimento}
-		  			onChangeText = {valorDoCampo => this.atualizaValor('comprimento',valorDoCampo)}
-		  			keyboardType = 'numeric'
-		  		/>
-
-		  		<TextInput
-		  			style = {styles.inputs}
 		  			placeholder='Largura*'
 		  			value = {this.state.largura}
 		  			onChangeText = {valorDoCampo => this.atualizaValor('largura',valorDoCampo)}
+		  			keyboardType = 'numeric'
+		  			
 		  		/>
 		  		
 		  		<TextInput
@@ -70,15 +65,26 @@ export default class TelaCalculo extends Component {
 		  			placeholder='Altura*'
 		  			value = {this.state.altura}
 		  			onChangeText = {valorDoCampo => this.atualizaValor('altura',valorDoCampo)}
+		  			keyboardType = 'numeric'
+		  			onEndEditing = {() => this.calcularAreaPiso()}
 		  		/>
 		  		
+		  		<TextInput
+		  			style = {styles.inputs}
+		  			placeholder='Comprimento*'
+		  			value = {this.state.comprimento}
+		  			onChangeText = {valorDoCampo => this.atualizaValor('comprimento',valorDoCampo)}
+		  			keyboardType = 'numeric'
+		  			onEndEditing = {() => this.calcularVolume()}
+		  		/>
+
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Volume*'
 		  			onChangeText = {() => this.calcularVolume()}
 		  			value = { this.state.volume }
 		  			editable = {false}
-
+		  			
 
 		  		/>
 		  		
@@ -92,6 +98,7 @@ export default class TelaCalculo extends Component {
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Temperatura interna'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<Picker 
@@ -110,11 +117,13 @@ export default class TelaCalculo extends Component {
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Condutividade térmica*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Espessura do isolamento*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<Picker
@@ -145,7 +154,7 @@ export default class TelaCalculo extends Component {
 
 		    </View>
 
-		    <View style = {{alignItems:'center'}} >
+		    <View style = {{alignItems:'center',marginBottom:10}} >
 			  	<TouchableOpacity 
 			  		style = {styles.btnProx} 
 			  		onPress = {() => {Actions.telacalculo2();}} 
@@ -174,7 +183,8 @@ const styles = StyleSheet.create({
 	inputs:{
 		width:300,
 		borderColor:'black',
-		margin:2
+		margin:2,
+
 	},
 
 	sinalizador:{

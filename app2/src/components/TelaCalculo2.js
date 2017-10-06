@@ -49,46 +49,55 @@ export default class TelaCalculo2 extends Component {
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Temperatura de congelamento do produto*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Calor específico do produto não congelado*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Calor específico do produto congelado'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Calor latente de congelamento'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Calor de respiração*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Massa total do produto armazenado*'
+		  			keyboardType = 'numeric'
 		  		/>
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Massa de produto em movimento*'
+		  			keyboardType = 'numeric'
 		  		/>		
 		  		
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Tempo de resfriamento/congelamento do produto*'
+		  			keyboardType = 'numeric'
 		  		/>		
 
 		  		<TextInput
 		  			style = {styles.inputs}
 		  			placeholder='Temperatura de entrada do produto*'
+		  			keyboardType = 'numeric'
 		  		/>		
 		  		
 
