@@ -1,0 +1,7 @@
+Adicionar linha fina sob o logo;
+Deixar backgroundColor do conteúdo com a cor de fundo branco;
+Adicionar label ao invés de placeholder;
+Deixar os campos input com o width menor;
+Subir o botão com marginBottom;
+Adicionar 'required' aos campos, não permitindo que o usuário mude de tela;
+Adicionar tipo dos valores (ex. ºC,m,m²).
